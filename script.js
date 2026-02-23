@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    const newsletterButton = document.querySelector(".newsletter .primary-button");
-    if (newsletterButton) {
-        newsletterButton.addEventListener("submit", function (e) {
+    const newsletterForm = document.querySelector("#newsletter-form");
+    if (newsletterForm) {
+        newsletterForm.addEventListener("submit", function (e) {
             e.preventDefault();
             alert("Thank you for subscribing!");
         });

@@ -1,85 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="top-bar">
+    <header class="top-bar">
         <div class="logo">MyShop</div>
-        <div class="menu">
+        <nav class="menu" aria-label="Huvudmeny">
             <div class="menu-item"><a href="#">Home</a></div>
             <div class="menu-item"><a href="#">Products</a></div>
             <div class="menu-item"><a href="#">Contact</a></div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="hero">
-        <img alt="" src="images/pexels-photo-373912.jpeg"
-             class="hero-image">
-        <div class="hero-text">
-            <h1>Welcome to MyShop</h1>
-            <p>Find the best products at the lowest prices.</p>
-            <a href="#" class="primary-button">Shop now</a>
-        </div>
-    </div>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <img alt="" src="images/pexels-photo-373912.jpeg" class="hero-image">
+            <div class="hero-text">
+                <h1 id="hero-title">Welcome to MyShop</h1>
+                <p>Find the best products at the lowest prices.</p>
+                <a href="#" class="primary-button">Shop now</a>
+            </div>
+        </section>
 
-    <div class="content">
-        <div class="section-title">
-            <h2>Our Products</h2>
-        </div>
-
-        <div class="products">
-            <div class="product-card">
-                <img alt="Black over-ear-design headphones" src="images/pexels-photo-461428.jpeg"
-                     class="product-image">
-                <h3>Headphones</h3>
-                <p class="product-description">
-                    High quality headphones with amazing sound. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <p class="product-price">599 kr</p>
-                <div class="add-to-cart">Add to cart</div>
+        <section class="content" aria-labelledby="products-title">
+            <div class="section-title">
+                <h2 id="products-title">Our Products</h2>
             </div>
 
-            <div class="product-card">
-                <img alt="Black quad-sized smartwatch" src="images/pexels-photo-1334597.jpeg"
-                     class="product-image">
-                <h3>Smart Watch</h3>
-                <p class="product-description">
-                    Track your activity and stay connected. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <p class="product-price">1299 kr</p>
-                <div class="add-to-cart">Add to cart</div>
+            <div class="products">
+                <article class="product-card">
+                    <img alt="Black over-ear-design headphones" src="images/pexels-photo-461428.jpeg" class="product-image">
+                    <h3>Headphones</h3>
+                    <p class="product-description">
+                        High quality headphones with amazing sound. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="product-price">599 kr</p>
+                    <button type="button" class="add-to-cart" aria-label="Add Headphones to cart">Add to cart</button>
+                </article>
+
+                <article class="product-card">
+                    <img alt="Black quad-sized smartwatch" src="images/pexels-photo-1334597.jpeg" class="product-image">
+                    <h3>Smart Watch</h3>
+                    <p class="product-description">
+                        Track your activity and stay connected. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="product-price">1299 kr</p>
+                    <button type="button" class="add-to-cart" aria-label="Add Smartwatch to cart">Add to cart</button>
+                </article>
+
+                <article class="product-card">
+                    <img alt="Dark-blue camera with a modern frame and lens" src="images/pexels-photo.jpg" class="product-image">
+                    <h3>Camera</h3>
+                    <p class="product-description">
+                        Capture your best moments in high resolution. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="product-price">3499 kr</p>
+                    <button type="button" class="add-to-cart" aria-label="Add Camera to cart">Add to cart</button>
+                </article>
             </div>
+        </section>
 
-            <div class="product-card">
-                <img alt="Dark-blue camera with a modern frame and lens" src="images/pexels-photo.jpg"
-                     class="product-image">
-                <h3>Camera</h3>
-                <p class="product-description">
-                    Capture your best moments in high resolution. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <p class="product-price">3499 kr</p>
-                <div class="add-to-cart">Add to cart</div>
-            </div>
-        </div>
-    </div>
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <h2 id="newsletter-title">Subscribe to our newsletter</h2>
+            <p>Get the latest updates and offers.</p>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <label for="user-name" class="visually-hidden">Your name</label>
+                    <input type="text" id="user-name" name="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="user-email" class="visually-hidden">Your email</label>
+                    <input type="email" id="user-email" name="email" placeholder="Your email">
+                </div>
+                <button type="submit" class="primary-button">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
-    <div class="newsletter">
-        <h2>Subscribe to our newsletter</h2>
-        <p>Get the latest updates and offers.</p>
-        <form>
-            <input type="text" name="name" placeholder="Your name">
-            <input type="email" name="email" placeholder="Your email">
-            <button type="submit" href="#" class="primary-button">Subscribe</button>
-        </form>
-    </div>
 
-    <div class="footer">
+    <footer class="footer">
         <p>© 2025 MyShop. All rights reserved.</p>
-        <a href="#">Click here</a>
-    </div>
+        <nav aria-label="Sidfotsmeny">
+            <a href="#">Read our Privacy Policy</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
