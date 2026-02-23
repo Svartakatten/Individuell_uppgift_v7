@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #777777;
+    color: white;
 }
 
 .top-bar {
@@ -15,14 +15,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 24px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #794724;
+    border-bottom: 1px solid #0a0707;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #999999;
+    color: white;
 }
 
 .menu {
@@ -32,7 +32,7 @@ body {
 
 .menu-item a {
     text-decoration: none;
-    color: #888888;
+    color: white;
     font-size: 14px;
 }
 
@@ -54,15 +54,20 @@ body {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #794724;
     padding: 16px 24px;
     max-width: 420px;
+}
+
+.products {
+    font-family: Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.767);
 }
 
 .primary-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #cccccc;
+    background-color: #03b2d1cc;
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
@@ -88,10 +93,10 @@ body {
 
 .product-card {
     width: 300px;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #8074749a;
     padding: 12px;
     border-radius: 4px;
-    background-color: #fcfcfc;
+    background-color: #d4d4d441;
 }
 
 .product-image {
@@ -122,8 +127,8 @@ body {
 .add-to-cart {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #dddddd;
-    color: #777777;
+    background-color: #03b2d1cc;
+    color: white;
     border-radius: 4px;
     cursor: pointer;
     font-size: 13px;
@@ -132,7 +137,8 @@ body {
 .newsletter {
     margin-top: 32px;
     padding: 24px;
-    background-color: #f7f7f7;
+    background-color: #794724;
+    color: rgb(236, 236, 236);
 }
 
 .newsletter input {
@@ -146,14 +152,15 @@ body {
 
 .footer {
     padding: 16px 24px;
-    background-color: #f0f0f0;
+    background-color: #794724;
+    color: rgb(236, 236, 236);
     margin-top: 40px;
     text-align: center;
     font-size: 12px;
 }
 
 .footer a {
-    color: #999999;
+    color: rgb(126, 212, 247);
     text-decoration: none;
     margin-left: 8px;
 }
