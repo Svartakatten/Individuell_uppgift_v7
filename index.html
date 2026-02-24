@@ -18,7 +18,12 @@
 
     <main>
         <section class="hero" aria-labelledby="hero-title">
-            <img alt="" src="images/pexels-photo-373912.jpeg" class="hero-image">
+            <img src="images/pexels-photo-373912.webp" 
+            alt=""
+            class="hero-image"
+            width="1920"
+            height="480"
+            fetchpriority="high">
             <div class="hero-text">
                 <h1 id="hero-title">Welcome to MyShop</h1>
                 <p>Find the best products at the lowest prices.</p>
@@ -33,7 +38,7 @@
 
             <div class="products">
                 <article class="product-card">
-                    <img alt="Black over-ear-design headphones" src="images/pexels-photo-461428.jpeg" class="product-image">
+                    <img alt="Black over-ear-design headphones" src="images/pexels-photo-461428.jpeg" class="product-image" loading="lazy">
                     <h3>Headphones</h3>
                     <p class="product-description">
                         High quality headphones with amazing sound. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -43,7 +48,7 @@
                 </article>
 
                 <article class="product-card">
-                    <img alt="Black quad-sized smartwatch" src="images/pexels-photo-1334597.jpeg" class="product-image">
+                    <img alt="Black quad-sized smartwatch" src="images/pexels-photo-1334597.jpeg" class="product-image" loading="lazy">
                     <h3>Smart Watch</h3>
                     <p class="product-description">
                         Track your activity and stay connected. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -53,7 +58,7 @@
                 </article>
 
                 <article class="product-card">
-                    <img alt="Dark-blue camera with a modern frame and lens" src="images/pexels-photo.jpg" class="product-image">
+                    <img alt="Dark-blue camera with a modern frame and lens" src="images/pexels-photo.jpg" class="product-image" loading="lazy">
                     <h3>Camera</h3>
                     <p class="product-description">
                         Capture your best moments in high resolution. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -87,8 +92,12 @@
         <nav aria-label="Sidfotsmeny">
             <a href="#">Read our Privacy Policy</a>
         </nav>
+        <div id="lcp-display" style="position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: #03b2d1; padding: 5px 10px; border-radius: 4px; font-family: monospace; z-index: 1000;">
+            LCP: Väntar...
+        </div>  
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.2/axe.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
